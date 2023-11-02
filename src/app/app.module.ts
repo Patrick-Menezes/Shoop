@@ -8,6 +8,8 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { ItemComponent } from './components/item/item/item.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ProductService } from './services/product.service';
+import { FeedComponent } from './components/feed/feed.component';
 
 
 @NgModule({
@@ -17,6 +19,7 @@ import { ContactComponent } from './components/contact/contact.component';
     ItemComponent,
     HomeComponent,
     ContactComponent,
+    FeedComponent,
 
   ],
   imports: [
@@ -24,7 +27,7 @@ import { ContactComponent } from './components/contact/contact.component';
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
